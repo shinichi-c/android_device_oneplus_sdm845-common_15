@@ -112,6 +112,12 @@ persist.vendor.camera.privapp.list=com.oneplus.factorymode,com.oneplus.camera,co
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SDM845
 
+# Crypto + Encryption
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.contents_mode=aes-256-xts
+
 # Display
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
@@ -137,11 +143,6 @@ persist.vendor.dpmhalservice.enable=1
 
 # DRM
 drm.service.enabled=true
-
-# Encryption
-ro.crypto.dm_default_key.options_format.version=2
-ro.crypto.volume.contents_mode=aes-256-xts
-ro.crypto.volume.filenames_mode=aes-256-cts
 
 # fastbootd
 ro.fastbootd.available=true
