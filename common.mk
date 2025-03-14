@@ -292,6 +292,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     oneplus-fwk
 
+ONEPLUS_CAMERA_SUPPORT := false
+
+ifeq ($(ONEPLUS_CAMERA_SUPPORT),false)
+$(call inherit-product-if-exists, vendor/oneplus/camera/onepluscamera.mk)
+endif
+
 # Partitions
 PRODUCT_PACKAGES += \
     vendor_bt_firmware_mountpoint \
