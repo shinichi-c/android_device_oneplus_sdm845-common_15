@@ -180,3 +180,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
 # partitions
 include vendor/lineage/config/BoardConfigReservedSize.mk
+
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+BUILD_BROKEN_DUP_RULES := true
