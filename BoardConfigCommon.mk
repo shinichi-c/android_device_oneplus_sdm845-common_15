@@ -1,4 +1,4 @@
-
+#
 # Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -178,3 +178,5 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
+# partitions
+include vendor/lineage/config/BoardConfigReservedSize.mk
