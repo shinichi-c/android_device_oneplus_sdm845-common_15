@@ -48,7 +48,7 @@ blob_fixups: blob_fixups_user_type = {
         .apktool_patch('blob-patches/PowerOffAlarm.patch'),
     'system_ext/lib64/lib-imsvideocodec.so': blob_fixup()
         .add_needed('libgui_shim.so'),
-    'vendor/lib/libVDBlurlessAPI_v2.so': blob_fixup()
+    ('vendor/lib/libVDBlurlessAPI_v2.so', 'vendor/lib/libhalide_hexagon_host.so'): blob_fixup()
         .clear_symbol_version('remote_handle_close')
         .clear_symbol_version('remote_handle_invoke')
         .clear_symbol_version('remote_handle_open'),
