@@ -39,4 +39,5 @@ cc_prebuilt_binary {
         none: true,
     },
     srcs: ["RemovePackages"],
+    check_elf_files: false,
 }
